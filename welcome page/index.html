@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Welcome</title>
+  </head>
+  <body>
+    <header>
+      <h1>The Recipes Book</h1>
+      <p>Here you can store , read and delete your food recipes!<br /></p>
+    </header>
+    <main>
+      <div id="new">
+        <h2>Register Now</h2>
+        <hr />
+        <fieldset>
+          <legend>New User</legend>
+          <form action="/" method="get" id="new_user">
+            <label for="fname">First Name </label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="John"
+              required
+            />
+            <label for="lname">Last name</label>
+            <input
+              type="text"
+              name="lname"
+              id="lname"
+              placeholder="Doe"
+              required
+            />
+            <label for="mail">E-mail Address</label>
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="somenone@example.com"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$"
+              required
+            />
+            <label for="new_username">Pick your Username</label>
+            <input
+              type="text"
+              name="new_username"
+              id="new_username"
+              placeholder="User123"
+              required
+            />
+            <label for="new_password">Pick your password </label>
+            <input
+              type="password"
+              name="new_password"
+              id="new_password"
+              minlength="5"
+              placeholder="******"
+              required
+            />
+            <input type="submit" value="Submit" id="submitNew" />
+          </form>
+        </fieldset>
+      </div>
+      <div id="registered">
+        <h2>Sign in</h2>
+        <hr />
+        <fieldset>
+          <legend>Registered User</legend>
+          <form id="registered_user">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="User123"
+              required
+            />
+            <label for="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              minlength="5"
+              placeholder="******"
+              required
+            />
+            <input type="submit" value="Log In" />
+          </form>
+        </fieldset>
+      </div>
+      <div id="visitor">
+        <h2>Visitor</h2>
+        <hr />
+        <fieldset>
+          <legend>Visitor</legend>
+          <form id="visitor_user">
+            <label for="visitor_name">Your name visitor!</label>
+            <input
+              type="text"
+              name="visitor_name"
+              id="visitor_name"
+              placeholder="Visitor's name"
+              required
+            />
+            <input type="submit" value="Let's go" />
+          </form>
+        </fieldset>
+      </div>
+    </main>
+    <hr />
+    <footer>
+      <h4>The Recipes Book®</h4>
+      <p>Nik-Pit 2024©</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

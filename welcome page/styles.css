@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    background-color: #e3fef7;
+  }
+  legend {
+    text-align: center;
+    font-weight: bold;
+  }
+  /*header */
+  header {
+    font-family: "Pacifico", cursive;
+    font-weight: 200;
+    font-style: normal;
+    text-align: center;
+    margin-top: 15px;
+  }
+  /*main*/
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    gap: 50px;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-bottom: 0;
+  }
+  div {
+    text-align: center;
+    flex-grow: 1;
+    flex-basis: 0;
+    height: 30vh;
+  }
+  form {
+    height: 250px;
+  }
+  input {
+    background-color: #003c43;
+    color: azure;
+    text-align: center;
+  }
+  input[type="submit"] {
+    height: 30px;
+    margin-top: 10px;
+  }
+  input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: #e3fef7;
+    color: black;
+  }
+  
+  /*Users*/
+  #new_user,
+  #registered_user,
+  #visitor_user {
+    display: flex;
+    flex-direction: column;
+    color: azure;
+    text-align: center;
+    font-weight: bold;
+    background-color: #77b0aa;
+  }
+  #registered_user > * {
+    margin: 5px 0;
+  }
+  #registered_user > input[type="submit"] {
+    margin-top: 95px;
+    margin-bottom: 0;
+  }
+  #visitor_user > input[type="text"] {
+    margin-top: 10px;
+  }
+  #visitor_user > input[type="submit"] {
+    margin-top: 167px;
+    margin-bottom: 0;
+  }
+  /*Footer*/
+  footer {
+    font-family: "Pacifico", cursive;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+  }
+  /*Media Queries*/
+  @media (max-width: 840px) {
+    main {
+      display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+      justify-content: space-around;
+    }
+    div {
+      margin-top: 50px;
+    }
+    #new_user,
+    #registered_user,
+    #visitor_user {
+      width: 20rem;
+    }
+  }
+  @media (max-width: 375px) {
+    header > h1 {
+      font-size: x-large;
+    }
+    header > p {
+      font-size: small;
+    }
+    h2 {
+      font-size: large;
+    }
+    form {
+      font-size: smaller;
+    }
+  }
+  
