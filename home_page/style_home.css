@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: bisque;
+}
+/*Background image*/
+.image {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/pexels-yaroslav-shuraev-8851929.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: -1;
+  opacity: 0.7;
+}
+/*Message*/
+.welcome-message {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  z-index: 2;
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  font-size: larger;
+  line-height: 2;
+}
+/*Message Add Recipe Button*/
+#addRecipe {
+  margin-top: 75px;
+  z-index: 2;
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
+  font-style: normal;
+  font-size: medium;
+  text-align: center;
+  width: 150px;
+  height: 35px;
+  border-radius: 30px;
+  border: 3px solid rgb(0, 0, 0);
+
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  z-index: 3;
+  animation: example 2s infinite;
+}
+@keyframes example {
+  0% {
+    background-color: #ffec9e;
+  }
+  50% {
+    background-color: #ffbb70;
+  }
+  100% {
+    background-color: #ffec9e;
+  }
+}
+
+#addRecipe:hover {
+  color: rgb(255, 0, 0);
+}
+
+/*Nav-Bar*/
+.sidebar {
+  position: fixed;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: fit-content;
+  height: fit-content;
+  background-color: #ffbb70;
+  overflow-x: hidden;
+  transition: 0.3s;
+  z-index: 2;
+}
+.sidebar:hover {
+  background-color: black;
+}
+
+#menuBtn {
+  padding: 10px;
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+  background-color: #ffbb70;
+  border: none;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: large;
+  transition: 0.1s;
+}
+#menuBtn:hover {
+  background-color: black;
+  color: #ffbb70;
+}
+
+#navLinks a {
+  display: block;
+  padding: 10px 0;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: large;
+  transition: 0.1s;
+  text-decoration: none;
+  text-align: center;
+}
+
+#navLinks a:hover {
+  color: black;
+  background-color: #ffbb70;
+}
+/*Footer*/
+footer {
+  font-family: "Pacifico", cursive;
+  font-weight: 100;
+  font-style: normal;
+  text-align: center;
+}
+/*Media queries*/
+@media (max-width: 1024px) {
+  .welcome-message {
+    font-size: medium;
+    height: 90vh;
+  }
+  #addRecipe {
+    margin-top: 50px;
+    width: 120px;
+    height: 30px;
+  }
+  #menuBtn {
+    font-size: medium;
+  }
+  #navLinks a {
+    font-size: medium;
+  }
+}
+
+@media (max-width: 767px) {
+  .image {
+    height: 80vh;
+    background-size: cover;
+  }
+
+  .welcome-message {
+    font-size: small;
+    height: 85vh;
+    padding: 0 20px;
+  }
+
+  #addRecipe {
+    width: 100px;
+    height: 25px;
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 480px) {
+  .image {
+    height: 70vh;
+    background-size: cover;
+  }
+
+  .welcome-message {
+    font-size: smaller;
+    height: 70vh;
+  }
+
+  #addRecipe {
+    width: 90px;
+    height: 25px;
+    font-size: x-small;
+  }
+
+  #navLinks a {
+    font-size: smaller;
+  }
+}
