@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Recipes Book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!--Header-->
+    <div id="search_bar">
+      <a href="../home_page/home.html"><img
+        id="cooking"
+        src="..\images\chef-cooking-cartoon-kitchen-drawing-food-chief-cook-meal-png-clipart.jpg"
+        alt="cooking"
+      /></a>
+
+      <h1>The Recipes Book</h1>
+      <div id="query">
+        <div id="userImage"><img src="../images/user_8647311.png" alt="userIcon">
+        <h4 id="user"></h4></div>
+        <div id="recipesBtn"><button><a href="../recipes/recipes.html">Recipes</a></button></div>
+      </div>
+    </div>
+    
+    <!-- Form to add a new recipe -->
+    <div class="container">
+      <div id="image"></div>
+      <form id="recipeForm">
+        <label for="recipeTitle">Title:</label>
+        <input type="text" id="recipeTitle" required />
+        <label for="recipeIngredients">Ingredients:</label>
+       <textarea id="recipeIngredients" rows="6" required></textarea>
+        <label for="recipeInstructions">Instructions:</label>
+        <textarea id="recipeInstructions" rows="6" required></textarea>
+      
+    </div>
+    <!--Recipe Category-->
+    <div id="recipeCat">
+      <div>
+        <label id="catLabel" for="categories">Choose a recipe category:</label>
+        <select name="categories" id="categories">
+          <option value="breakfast">Breakfast</option>
+          <option value="lunch">Lunch</option>
+          <option value="dinner">Dinner</option>
+          <option value="appetizer">Appetizer</option>
+          <option value="salad">Salad</option>
+          <option value="main-course">Main-course</option>
+          <option value="side-dish">Side-dish</option>
+          <option value="baked-goods">Baked-goods</option>
+        </select>
+      </div>
+      <button type="submit" id="addRecipes">Add Recipe</button>
+    </form></div>
+<!-- The new Recipe -->
+<div id="newRecipe">
+  <h3 id="newRecipeTitle"></h3>
+  <ul id="ingredientsList"></ul>
+  <ol id="instructionsList"></ol>
+</div>
+    <footer>
+      <h4>The Recipes Book®</h4>
+      <p>Nik-Pit 2024©</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
