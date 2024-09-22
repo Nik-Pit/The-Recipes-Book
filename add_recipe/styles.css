@@ -170,9 +170,10 @@ footer {
 
 @media (max-width: 1024px) {
   #cooking {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border-radius: 50px;
+    margin-top: 10px;
   }
   #image {
     width: 100%;
@@ -205,10 +206,10 @@ footer {
 
   #recipeCat > button {
     position: relative;
-    top: 90%;
+    top: 100%;
     left: 100%;
-
     font-size: medium;
+    height: fit-content;
   }
 
   #newRecipe {
@@ -221,6 +222,9 @@ footer {
 }
 
 @media (max-width: 768px) {
+  #search_bar {
+    height: fit-content;
+  }
   #cooking {
     height: 50px;
     width: 50px;
@@ -293,7 +297,7 @@ footer {
   }
 
   #recipeCat {
-    top: 119%;
+    top: 120%;
     left: 2%;
   }
   #catLabel {
@@ -302,11 +306,10 @@ footer {
   }
 
   #recipeCat > button {
-    width: 75%;
+    width: 50%;
     height: 18px;
     font-size: small;
-    top: 145%;
-    left: 8%;
+    left: 0%;
   }
 
   footer {
@@ -322,14 +325,14 @@ footer {
   }
 
   #cooking {
-    height: 35px;
-    width: 35px;
+    height: 25px;
+    width: 25px;
     border-radius: 35px;
   }
 
   #recipeForm {
-    top: 12%;
-    left: 2%;
+    top: 70%;
+    left: 5%;
     width: 90%;
     height: auto;
   }
@@ -341,7 +344,7 @@ footer {
   }
 
   #recipeCat {
-    top: 75%;
+    bottom: 5%;
     left: 2%;
     font-size: smaller;
   }
