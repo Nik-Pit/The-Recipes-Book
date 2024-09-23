@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="recipes_styles.css" />
+    <title>Recipes</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <ul>
+        <li>
+          <a href="/home_page/home.html">Home</a>
+        </li>
+        <li>
+          <a href="../add_recipe/main.html">Add Recipe</a>
+        </li>
+        <li>
+          <a href="../exit_page/exit.html">Exit</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Recipe List -->
+    <div id="recipesList">
+      <h1>The Recipes Book</h1>
+      <hr />
+      <ul id="recipes"></ul>
+    </div>
+    <dialog class="modal" id="modal">
+      <h2 id="title"></h2>
+      <h4>Ingredients</h4>
+      <ul id="ingredients"></ul>
+      <h4>Instructions</h4>
+      <ol id="instructions"></ol>
+      <button class="close-button">&times;</button>
+    </dialog>
+    <footer>
+      <h4>The Recipes Book®</h4>
+      <p>Nik-Pit 2024©</p>
+    </footer>
+    <script src="recipes_script.js"></script>
+  </body>
+</html>

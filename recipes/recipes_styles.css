@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: blanchedalmond;
+  font-family: "Pacifico", cursive;
+}
+/*Navbar*/
+nav {
+  padding: 5px 5%;
+  border: 2px solid orange;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav ul li {
+  margin-left: 1.5rem;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 95%;
+  font-weight: 400;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background-color: #f5f5f5;
+}
+
+/*Recipes List*/
+#recipesList > h1 {
+  margin-top: 25px;
+  text-align: center;
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
+#recipesList > ul > li {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+/*Modal*/
+.modal {
+  padding: 2em;
+  max-width: 1000ch;
+  border: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: aliceblue;
+  text-align: center;
+}
+.modal::backdrop {
+  background: linear-gradient(50deg, orange, blanchedalmond);
+  opacity: 0.5;
+}
+.close-button {
+  cursor: pointer;
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  height: 25px;
+  width: 30px;
+  background-color: #000;
+  color: aliceblue;
+}
+.close-button:hover {
+  background-color: aliceblue;
+  color: #000;
+}
+
+/*Buttons*/
+.Btns {
+  font-family: "Pacifico", cursive;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #ffbb70;
+}
+
+/*Footer*/
+footer {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-55%, -35%);
+  font-family: "Pacifico", cursive;
+  font-weight: 100;
+  font-style: normal;
+  text-align: center;
+}
